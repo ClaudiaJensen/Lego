@@ -13,17 +13,22 @@ public class Order
 {
     private int order_id;
     private int user_id;
-    private int length, width, heigth;
+    private int length, width, height;
     boolean shipped;
 
-    public Order(int order_id, int user_id, int length, int width, int heigth, boolean shipped)
+    public Order(int order_id, int user_id, int length, int width, int height, boolean shipped)
     {
         this.order_id = order_id;
         this.user_id = user_id;
         this.length = length;
         this.width = width;
-        this.heigth = heigth;
+        this.height = height;
         this.shipped = shipped;
+    }
+
+    public void setOrder_id(int order_id)
+    {
+        this.order_id = order_id;
     }
 
     public int getOrder_id()
@@ -46,9 +51,9 @@ public class Order
         return width;
     }
 
-    public int getHeigth()
+    public int getHeight()
     {
-        return heigth;
+        return height;
     }
 
     public boolean isShipped()

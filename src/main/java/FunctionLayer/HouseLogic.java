@@ -15,7 +15,7 @@ public class HouseLogic
 {
     private static HouseLogic singleton;
     
-    public static HouseLogic math(){
+    public static HouseLogic Housemath(){
         if(singleton == null){
             singleton = new HouseLogic();
         }
@@ -32,7 +32,7 @@ public class HouseLogic
 
     }
 
-    public HashMap<String, Integer> makeHouse(int length, int width, int height) {
+    public HashMap<String, Integer> BuildHouse(int length, int width, int height) {
         counterRestart();
         for (int i = 1; i <= height; i++) {
             if (i % 2 == 0) {
